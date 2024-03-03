@@ -46,6 +46,9 @@ Ukuran: 8 GBytes Merupakan besaran memori yang terdapat pada laptop ini.
 Channel # 4 x 32-bit Frekuensi Uncore Tunggal 273.0 Mhz
 Pengaturan Waktu Frekuensi DRAM: 273,0 Mhz FSB:DRAM : 1:2 CAS# Latensi (CL): 15,0 jam Ras# ke CAS # Delay (tRCD): 13 jam RAS # precharger (tRP): 15 jam Waktu Siklus (tRAS): 29 jam Bank cycle Time (tRC): 44 jam
 
+SPD
+![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20215904.png)
+
 GRAPHICS
 ![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20203633.png)
 Name: AMD Radeon™ Graphics
@@ -55,3 +58,9 @@ GPX Core: 700.0 MHz
 Shader / SoC: 400.0 MHz
 Memory: 400.0 MHz
 Memory size: 2 GBytes
+
+Bench
+![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20215935.png)
+
+About
+![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20215950.png)
