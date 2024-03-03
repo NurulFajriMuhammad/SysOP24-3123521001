@@ -1,0 +1,57 @@
+CPU
+![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20203217.png)
+CPU: Tab ini menunjukkan informasi tentang prosesor, seperti nama, kode nama, kecepatan jam, jumlah inti, dan teknologi yang digunakan.
+Bagian Prosesor
+Nama: AMD Ryzen 3
+Menampilkan nama dari processor yang digunakan pada laptop atau komputer.
+Nama Kode: Mendocino
+Menampilkan Kode dari prosesor yang dipakai komputer atau laptop.
+Teknologi: 7nm
+Menampilkan Kejadian besar komponen yang digunakan.
+Core VID: 0,694 V
+Menampilkan tegangan listrik yang digunakan sekitar 0.694 Volt.
+Spesifikasi: AMD Ryzen 3 7320U with Radeon Graphics
+Menampilkan Spesifikasi dari komputer atau laptop yang dipakai.
+Instruksi: MMX(+), SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, SSE4A, x86-64, AES, AVX, AVX2, FMA3, SHA
+Core Speed: 4773.11 MHz
+Mengetahui kecepatan satu inti satuan dalam melakukan suatu perintah.
+Multiplier: x 48.0
+Mengatur lebar jalur transfer yang tersedia. Pengkali. Apabila processor banyak melakukan proses pada komputer, maka multiplier meningkat. Sedangkan apabila processor sedikit melakukan proses pada komputer, maka multiplier menurun dalam keadaan stabil.
+Bus Speed: 99,44MHz
+Menampilkan kecepatan transfer data dan proses atau kecepatan BUS. Jumlah alur yang mampu dilaksanakan oleh sebuah proses dalam waktu kedua. Satuan waktu ini diukur dalam satuan juta arah detik yang disebut juga sebagai megahertz (MHz) atau juta kitaran detik.
+Cache
+Memori cache adalah memori berukuran kecil berkecepatan tinggi yang berfungsi untuk menyimpan sementara proses dan/atau data (informasi) yang diperlukan oleh prosesor.
+L1 Data: 4 x 32 KByte 8 way
+L1 inst.: 4 x 32 Kbytes 8 way
+Level 2: 4 x 512 KByte 8 way
+Level 3: 4 Mbytes 12 way
+
+MAINBOARD
+![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20203535.png)
+Pabrikan: LENOVO.
+Merupakan pembuat atau pabrik dari motherboard laptop ini.
+Model: LNVNB 16 12 16
+Tipe dari Motherboard pada komputer atau laptop saya.
+Spesifikasi Bus: PCI-Express 4.0 (16,0 gt/s)
+Chipset: AMD Ryzen SOC Rev. 02
+Southbridge: AMD FCH Rev. 51
+Bagian BIOS Merek: LENOVO. Versi: KSCN26WW Tanggal: 04/14/2023
+Keterangan di atas merupakan tanggal pembuatan BIOS Graphic Interface dan versi laptop yang saya punya.
+Bagian Antarmuka Grafis Tidak di ketahui
+
+MEMORY
+![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20203554.png)
+General Type: DDR5 Menampilkan tipe memori apa yang digunakan pada laptop atau komputer.
+Ukuran: 8 GBytes Merupakan besaran memori yang terdapat pada laptop ini.
+Channel # 4 x 32-bit Frekuensi Uncore Tunggal 273.0 Mhz
+Pengaturan Waktu Frekuensi DRAM: 273,0 Mhz FSB:DRAM : 1:2 CAS# Latensi (CL): 15,0 jam Ras# ke CAS # Delay (tRCD): 13 jam RAS # precharger (tRP): 15 jam Waktu Siklus (tRAS): 29 jam Bank cycle Time (tRC): 44 jam
+
+GRAPHICS
+![alt text](https://github.com/NurulFajriMuhammad/SysOP24-3123521001/blob/main/Screenshot%202024-03-03%20203633.png)
+Name: AMD Radeon™ Graphics
+Board Manuf: Lenovo
+Revision: C2
+GPX Core: 700.0 MHz
+Shader / SoC: 400.0 MHz
+Memory: 400.0 MHz
+Memory size: 2 GBytes
