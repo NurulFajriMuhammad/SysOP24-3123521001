@@ -1,0 +1,23 @@
+4.1 Berikan tiga contoh pemrograman di mana multithreading memberikan kinerja yang lebih baik daripada solusi single-threaded. 
+Jawab: 
+a. Sebuah server web yang melayani setiap permintaan di thread yang terpisah.
+b. Aplikasi paralel seperti perkalian matriks di mana bagian yang berbeda dari matriks dapat dikerjakan secara paralel.
+c. Program GUI interaktif seperti debugger di mana thread digunakan untuk memantau masukan pengguna, thread lain mewakili aplikasi yang berjalan, dan thread ketiga memantau kinerja.
+
+4.2 Apa saja perbedaan antara user-level threads dan kernel-level threads? Di bawah keadaan apa satu jenis lebih baik daripada yang lain?
+Jawab:
+a. User-level threads tidak diketahui oleh kernel, sedangkan kernel mengetahui kernel threads.
+b. Pada sistem yang menggunakan model M:1 atau M:N, user threads dijadwalkan oleh pustaka thread dan kernel menjadwalkan kernel threads.
+c. Kernel threads tidak perlu terkait dengan proses sedangkan setiap user thread milik proses. Kernel threads umumnya lebih mahal untuk dipertahankan daripada user threads karena harus diwakili dengan struktur data kernel.
+
+4.3 Jelaskan tindakan yang diambil oleh kernel untuk beralih konteks antara kernel-level threads.
+Jawab:
+Beralih konteks antara kernel threads biasanya memerlukan menyimpan nilai register CPU dari thread yang di-switch out dan memulihkan nilai register CPU dari thread yang baru dijadwalkan.
+
+4.4 Apa saja sumber daya yang digunakan ketika thread dibuat? Bagaimana perbedaannya dengan sumber daya yang digunakan ketika proses dibuat?
+Jawab:
+Karena thread lebih kecil daripada proses, pembuatan thread biasanya menggunakan sumber daya yang lebih sedikit daripada pembuatan proses. Pembuatan proses memerlukan alokasi blok kontrol proses (PCB), struktur data yang cukup besar. PCB mencakup peta memori, daftar file yang terbuka, dan variabel lingkungan. Mengalokasikan dan mengelola peta memori adalah aktivitas yang paling memakan waktu. Membuat baik user thread atau kernel thread melibatkan alokasi struktur data kecil untuk menyimpan set register, tumpukan, dan prioritas.
+
+4.5 Anggaplah sistem operasi memetakan user-level threads ke kernel menggunakan model banyak-ke-banyak dan pemetaan tersebut dilakukan melalui LWPs. Selain itu, sistem memungkinkan pengembang untuk membuat thread real-time untuk digunakan di sistem real-time. Apakah perlu untuk mengikat thread real-time ke LWP? Jelaskan.
+Jawab:
+Ya. Waktu sangat penting bagi aplikasi real-time. Jika thread ditandai sebagai real-time tetapi tidak terikat ke LWP, thread mungkin harus menunggu untuk terikat ke LWP sebelum berjalan. Pertimbangkan jika thread real-time sedang berjalan (terikat ke LWP) dan kemudian melanjutkan untuk memblokir (yaitu harus melakukan I/O, telah di-preempt oleh thread real-time prioritas yang lebih tinggi, menunggu untuk mutual exclusion lock, dll.) Sementara thread real-time diblokir, LWP yang telah terikat ke thread tersebut telah ditugaskan ke thread lain. Ketika thread real-time dijadwalkan untuk berjalan lagi, ia harus menunggu untuk terikat ke LWP. Dengan mengikat LWP ke thread real-time Anda memastikan thread akan dapat berjalan dengan penundaan minimal sekali dijadwalkan.
